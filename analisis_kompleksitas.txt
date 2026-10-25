@@ -1,0 +1,37 @@
+# ANALISIS KOMPLEKSITAS ALGORITMA PENCARIAN BUKU
+
+## 1. Deskripsi Program
+
+Program ini dibuat menggunakan bahasa pemrograman Python untuk mencari judul buku dalam dataset Google Books. Dataset yang digunakan berisi 15.147 data buku.
+
+Dua algoritma yang digunakan adalah Linear Search dan Binary Search. Kedua algoritma diuji untuk mencari judul buku yang sama, yaitu "The Dial".
+
+## 2. Linear Search
+
+Linear Search adalah algoritma pencarian yang memeriksa data satu per satu, mulai dari data pertama hingga data terakhir.
+
+Pada pengujian, Linear Search berhasil menemukan 3 buku dengan judul "The Dial". Algoritma ini melakukan 15.147 perbandingan dengan waktu eksekusi 0,01177250 detik.
+
+Kompleksitas waktu Linear Search adalah O(n), karena jumlah pemeriksaan dapat bertambah seiring bertambahnya jumlah data.
+
+## 3. Binary Search
+
+Binary Search adalah algoritma pencarian yang bekerja dengan membagi ruang pencarian menjadi dua bagian. Algoritma ini memerlukan data yang sudah diurutkan terlebih dahulu.
+
+Pada pengujian, Binary Search berhasil menemukan 3 buku dengan judul "The Dial". Algoritma ini melakukan 10 perbandingan dengan waktu eksekusi 0,00003040 detik.
+
+Kompleksitas waktu pencarian Binary Search adalah O(log n), karena ruang pencarian berkurang sekitar setengah pada setiap langkah.
+
+## 4. Perbandingan Kedua Algoritma
+
+Berdasarkan hasil pengujian, Linear Search melakukan 15.147 perbandingan, sedangkan Binary Search melakukan 10 perbandingan. Keduanya menemukan 3 buku dengan judul yang sama.
+
+Pada percobaan ini, Binary Search membutuhkan waktu pencarian yang lebih singkat. Namun, data harus diurutkan terlebih dahulu sebelum Binary Search dijalankan. Waktu pengurutan tersebut belum dihitung dalam pengukuran waktu Binary Search.
+
+## 5. Kesimpulan
+
+Berdasarkan pengujian terhadap 15.147 data buku, Binary Search lebih efisien dalam jumlah perbandingan untuk pencarian judul buku yang sudah diurutkan. Linear Search memiliki kompleksitas waktu O(n), sedangkan Binary Search memiliki kompleksitas waktu O(log n).
+
+Dengan demikian, Binary Search cocok digunakan untuk pencarian berulang pada data yang sudah terurut. Sementara itu, Linear Search lebih sederhana dan dapat digunakan tanpa mengurutkan data terlebih dahulu.
+
+Hasil waktu eksekusi dapat berbeda pada setiap percobaan, bergantung pada kondisi komputer dan proses yang sedang berjalan.
